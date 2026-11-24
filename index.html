@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A welcoming fitness studio for women. Find your strength at Bloom Studio.">
+    <title>Bloom Studio | Women's Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home" aria-label="Bloom Studio home">bloom<span>.</span></a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+            <a href="#programs">Programs</a>
+            <a href="#about">Our studio</a>
+            <a href="#schedule">Schedule</a>
+            <a class="nav-cta" href="#contact">Join us</a>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode">☾</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR SPACE. YOUR STRENGTH.</p>
+                <h1>Feel good<br>in your <em>own</em> skin.</h1>
+                <p>Move, grow, and find your people in a fitness space made for women.</p>
+                <a class="button" href="#programs">Find your class <span aria-hidden="true">→</span></a>
+            </div>
+            <img class="hero-image"
+                 src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=85"
+                 alt="Woman stretching during a workout in a bright studio">
+            <div class="hero-note">STRONGER, TOGETHER <span>✳</span></div>
+        </section>
+
+        <section class="section programs" id="programs">
+            <div class="section-heading">
+                <p class="eyebrow">MOVE YOUR WAY</p>
+                <h2>Find your kind of <em>strong.</em></h2>
+                <p>From first-timers to fitness regulars, there’s a place for you here.</p>
+            </div>
+            <div class="program-grid">
+                <article class="program-card">
+                    <span class="card-number">01</span>
+                    <h3>Strength</h3>
+                    <p>Build confidence and strength with supportive, coach-led sessions.</p>
+                    <a href="#contact">Explore classes <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="program-card">
+                    <span class="card-number">02</span>
+                    <h3>Yoga & flow</h3>
+                    <p>Find your balance, improve mobility, and make space to breathe.</p>
+                    <a href="#contact">Explore classes <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="program-card">
+                    <span class="card-number">03</span>
+                    <h3>HIIT & energy</h3>
+                    <p>Fun, upbeat workouts that help you move at your own pace.</p>
+                    <a href="#contact">Explore classes <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=85"
+                 alt="Women practicing yoga together in a welcoming studio">
+            <div class="about-content">
+                <p class="eyebrow">MORE THAN A WORKOUT</p>
+                <h2>A community that lifts you <em>up.</em></h2>
+                <p>Bloom is a welcoming studio where women can feel comfortable showing up exactly as they are. Our coaches meet you where you are and help you find what feels good.</p>
+                <a class="text-link" href="#contact">Come say hello <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="section schedule" id="schedule">
+            <div class="section-heading">
+                <p class="eyebrow">MAKE TIME FOR YOU</p>
+                <h2>Your week, your <em>way.</em></h2>
+                <p>A few favorites to get you started. Contact us for the full timetable.</p>
+            </div>
+            <div class="schedule-grid">
+                <article><span>MON · 9:00 AM</span><h3>Morning Flow</h3><p>Yoga · All levels</p></article>
+                <article><span>WED · 6:00 PM</span><h3>Feel-Good Strength</h3><p>Strength · All levels</p></article>
+                <article><span>SAT · 10:00 AM</span><h3>Weekend Energy</h3><p>HIIT · All levels</p></article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div>
+                <p class="eyebrow">READY WHEN YOU ARE</p>
+                <h2>Let’s find your <em>fit.</em></h2>
+                <p>Have a question or want to try a class? Send us a note and we’ll be in touch.</p>
+            </div>
+            <form id="contact-form">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button class="button" type="submit">Send message <span aria-hidden="true">→</span></button>
+                <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="logo" href="#home">bloom<span>.</span></a>
+        <p>A little stronger, together.</p>
+        <p>© <span id="year"></span> Bloom Studio</p>
+    </footer>
+</body>
+</html>
